@@ -7,7 +7,14 @@
     <link href="styles/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/font-awesome.css">
     <link rel="stylesheet" href="styles/recipes.css">
-    <title>关于</title>
+    <title>菜谱</title>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery.lazyload.min.js"></script>
+    <!--图片懒加载-->
+    <script src="scripts/lazyload.js"></script>
+    <!--菜谱显示区域切换-->
+    <script src="scripts/recipes.js"></script>
 </head>
 <body>
 <!--==开始banner==-->
@@ -276,34 +283,8 @@
 
 <!--==开始copyright==-->
 <div class="copyright">
-    <h5 class="text-center">Copyright &copy 2016.Yu Yi All rights reserved.</h5>
+    <h5 class="text-center">Copyright &copy 2016 <a href="mailto:523697597@qq.com"> 余毅 </a> 版权所有.</h5>
 </div>
 <!--  结束copyright  -->
-<script src="scripts/jquery.js"></script>
-<script src="scripts/bootstrap.min.js"></script>
-<script src="scripts/jquery.lazyload.min.js"></script>
-<script>
-    $("img.lazy").lazyload({
-        effect: "fadeIn"
-    });
-    $(function () {
-        var x = 2;
-        var rowsize = 4;
-        $("#row3").hide();
-        $("#row4").hide();
-        $("#morebutton").click(function () {
-            x = (x + 1 <= rowsize) ? x + 1 : rowsize;
-            var section = "#row" + x;
-            $(section).show(600);
-            console.log(x);
-        });
-        $("#lessbutton").click(function () {
-            x = (x - 1 < 0) ? 0 : x - 1;
-            var section = "#row" + (x + 1);
-            $(section).hide(600);
-            console.log(x);
-        });
-    });
-</script>
 </body>
 </html>

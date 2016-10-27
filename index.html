@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="styles/font-awesome.css">
     <link rel="stylesheet" href="styles/index.css">
     <title>首页</title>
+    <!--github网络不好所以把js放head里面-->
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery.lazyload.min.js"></script>
+    <script src="scripts/lazyload.js"></script>
 </head>
 <body>
 <!--==开始banner==-->
@@ -373,16 +378,8 @@
 <!--  结束footer  -->
 <!--==开始copyright==-->
 <div class="copyright">
-    <h5 class="text-center">Copyright &copy 2016.Yu Yi All rights reserved.</h5>
+    <h5 class="text-center">Copyright &copy 2016 <a href="mailto:523697597@qq.com"> 余毅 </a> 版权所有.</h5>
 </div>
 <!--  结束copyright  -->
-<script src="scripts/jquery.js"></script>
-<script src="scripts/bootstrap.min.js"></script>
-<script src="scripts/jquery.lazyload.min.js"></script>
-<script>
-    $("img.lazy").lazyload({
-        effect: "fadeIn"
-    });
-</script>
 </body>
 </html>
