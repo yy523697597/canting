@@ -1,5 +1,5 @@
 body {
-  font-family: 'Arial', 'Roboto', sans-serif;
+  font-family:'Microsoft YaHei', 'Arial', 'Roboto', sans-serif;
   font-size: 16px;
 
   background-color: #fff;
@@ -9,9 +9,9 @@ body {
 
 /*为banner设置背景图片，将导航链接下移50px*/
 .banner {
-  min-height: 300px;
+  min-height: 400px;
   padding-top: 50px;
-
+  padding-right: 50px;
   background-image: url('../img/bnr.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -89,22 +89,22 @@ body {
   background-color: #4cae4c;
 }
 
-.navbar .navbar-form {
-  margin-right: 9%;
-}
+
 
 .banner-head .logo,
 .banner-head .header-right {
   display: inline-block;
 }
+#contactWay,
+#searchGroup{
+  float: right;
 
-.banner-head .header-right {
-  font-size: 18px;
-
-  margin-left: 40%;
+  padding-right:  15px;
 }
-
-/*banner样式结束*/
+#contactWay {
+  font-size: 18px;
+  margin-top: 30px;
+}
 /*===footer开始===*/
 .footer {
   min-height: 300px;
